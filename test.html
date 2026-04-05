@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Test</title>
+</head>
+<body>
+
+<h2>Crypto Prices</h2>
+<span id="crypto"></span>
+
+<script>
+fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,cardano,tron")
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById("crypto");
+
+container.innerHTML = `data[0]["current_price"]; <img src="${data[0]['image']}">`
+  
+  })
+  .catch(err => console.log(err));
+</script>
+
+</body>
+</html>

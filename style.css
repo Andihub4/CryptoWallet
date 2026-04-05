@@ -1,0 +1,137 @@
+body {
+  background: rgba(10, 11, 28, 1);
+}
+
+.main {
+  background: url(/media/main1.jpg);
+  margin-left: -2%;
+  width: 103.2%;
+  max-width: 103.2%;
+  position: relative;
+  top: -14px;
+}
+
+
+.menu {
+  display: flex;
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+}
+.menu-btn {
+  flex: 1 1 min(160px, 25%);
+  padding: clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#btc {
+  color: rgba(240, 147, 79, 1);
+}
+
+
+#hero0 {
+  padding-top: 19%;
+  margin-left: 3%;
+  font-size: 350%;
+  color: white;
+}
+
+#hero {
+  margin-left: 3%;
+  font-size: 250%;
+  color: white;
+  padding-bottom: 10%;
+}
+
+#intro {
+  max-width: 40%;
+  color: white;
+  margin-left: 3%;
+  padding-bottom: 2%;
+}
+#getstart {
+ background: rgba(69, 68, 67, 1);
+ color: white;
+ border: 1px solid rgba(69, 68, 67, 1);
+ border-radius: 5px;
+ padding-top: 1%;
+ padding-bottom: 1%;
+ margin-left: 3%;
+ width: 10%;
+ max-width: 10%;
+ 
+}
+
+
+#intro2 {
+  color: floralwhite;
+  max-width: 55%;
+  padding: 2%;
+  margin-left: 20%;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: rgba(66, 68, 90, 1);
+  position: relative;
+  top:  -70px;
+  
+}
+
+#intro2h {
+  padding-bottom: 10%;
+  
+}
+
+
+.logos {
+  width: 100%;
+}
+
+.logo-btn {
+  
+}
+#cry {
+  max-width: 10%;
+  max-height: 5vh;
+  width: 10%;
+  border-radius: 50px;
+  margin-left: 8%;
+}
+
+.context {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  background: rgba(13, 16, 57, 1);
+  color: white;
+}
+
+
+
+.second_im {
+width: 40%;
+max-width: 40%;
+height: 30vh;
+
+}
+.scd_imdiv {
+  max-width: 40%;
+  width: 40%;
+  
+}
+
+#dev {
+  max-width: 15%;
+  max-height: 7.5vh;
+  width: 15%;
+  border-radius: 250px;
+  margin-left: 6%;
+}
