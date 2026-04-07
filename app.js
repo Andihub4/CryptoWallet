@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from '/src/components/Home'
 import Menu from '/src/components/Menu'
-
+import Wallet from '/src/components/Wallet'
 
 
 
@@ -18,10 +18,8 @@ class Main extends React.Component {
     
     return  (
       <div className="">
-        <Home 
-        title="First Card"
-        text="This is a new component 🚀"
-      />
+        
+        <Home/>
       
       
       

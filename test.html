@@ -6,7 +6,7 @@
 <body>
 
 <h2>Crypto Prices</h2>
-<span id="crypto"></span>
+<div id="crypto"></div>
 
 <script>
 fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,cardano,tron")
@@ -14,8 +14,16 @@ fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoi
   .then(data => {
     const container = document.getElementById("crypto");
 
-container.innerHTML = `data[0]["current_price"]; <img src="${data[0]['image']}">`
-  
+    data.forEach(coin => {
+      const div = document.createElement("div");
+
+      div.innerHTML = `
+        <img src="${coin.image}" width="30" />
+        <strong>${coin.name}</strong> - $${coin.current_price}
+      `;
+
+      container.appendChild(div);
+    });
   })
   .catch(err => console.log(err));
 </script>
