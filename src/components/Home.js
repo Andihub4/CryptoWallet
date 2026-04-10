@@ -1,6 +1,18 @@
 import React, { useState } from "react";
 
-export default function Home(props) {
+export default function Home({ navigate }) {
+  
+  let status = localStorage.getItem("status");
+  let username = localStorage.getItem("name");
+  let idt = localStorage.getItem("idt")
+  
+  if ( status == "signed" && idt.length > 5) {
+  
+    navigate("wallet");
+  }
+  
+  
+  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -8,6 +20,7 @@ export default function Home(props) {
     e.preventDefault();
     alert(`Form submitted : ${name}`);
   }
+
 
 
   fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,solana,cardano,tron")
@@ -95,9 +108,9 @@ container.innerHTML = code;
     </button>
     
     
-    <button class="menu-btn">Products</button>
-    <button class="menu-btn">Pricing</button>
-    <button class="menu-btn">Sign in</button>
+    <button class="menu-btn">Welcome</button>
+    <button class="menu-btn">✨Start your journey</button>
+    <button onClick={() => navigate("login")} class="menu-btn">Sign in</button>
   </nav>
   
         
@@ -106,7 +119,7 @@ container.innerHTML = code;
       <div id="hero">Cryptocurrency Is Here</div>
       <p id="intro">Create your Ethereum Faucet Wallet and manage it effortlessly! Read balances, receive test tokens, send transactions, and explore the crypto market with live interactive charts—all in a safe, risk-free environment.</p>
       
-      <button id="getstart">get started </button>
+      <button onClick={() => navigate("signup")} id="getstart">get started </button>
       <div id="intro2h"></div>
       </div>
             <p id="intro2"> Blockchain Developers: Effortlessly manage your ETH Testnet Faucet Wallet to streamline your development workflow. Instantly receive faucet tokens for gas fees, monitor balances in real-time, create transactions visually, and simplify testing with interactive tools—accelerate your development with zero risk.</p>
@@ -169,7 +182,7 @@ I am continuously exploring new innovations in AI and blockchain, with the goal 
                           </p>
             
             
-            <button id="getstart"> Sign Up</button>
+            <button onClick={() => navigate("signup")} id="getstart"> Sign Up</button>
             </div>
 
 

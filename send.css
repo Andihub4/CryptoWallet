@@ -1,0 +1,65 @@
+/* SEND FORM */
+.send-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.send-form label {
+  font-size: 14px;
+  color: #a5a6af;
+}
+
+.send-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+  background: #0c0f14;
+  color: white;
+  font-size: 14px;
+}
+
+.send-form input:focus {
+  outline: none;
+  border-color: #00c896;
+}
+
+.network-input {
+  background: #1e222d;
+  color: #00ff9f;
+  font-weight: bold;
+}
+
+/* FULL WIDTH BUTTON */
+.btn.full {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* INFO LIST */
+.info-list {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.info-list li {
+  margin-bottom: 8px;
+  color: #d1d1d1;
+}
+
+/* TRANSACTION PREVIEW */
+.preview-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #2a2f3a;
+}
+
+.preview-row:last-child {
+  border-bottom: none;
+}
+.success {
+  color: #00ff9f;
+}

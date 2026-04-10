@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+
+<script>
+  let test = "wweee";
+  alert(test.length)
+</script>
+
+
+<script>
+
+
+//🧩Login
+
+
+/**
+async function sayHello() {
+  const response = await fetch('http://localhost:3000/signup/Andinet/Abebe/18/Andi@gmail.com/12345');
+  const data = await response.json();
+
+  console.log(data); // see full structure
+}
+sayHello();
+**/
+
+
+//🧩Sign up
+
+/**
+const url = "http://localhost:3000/signup";
+const data = {
+  n: "ttttt",
+  ln: "rrrrrr",
+  ag: "11",
+  e: "tttttt@gmail.com",
+  p:"23232323"
+}; // Your empty data object
+
+fetch(url, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(data) // Sends "{}" as the body
+})
+.then(response => response.json())
+.then(result => console.log("Success:", result))
+.catch(error => console.error("Error:", error));
+
+**/
+
+// to => 0x4804239D472EAea79D55C3EfCc0846B183747148
+// sender idt => bbb
+
+// amount => 0.01
+
+const idt = "bbb";
+
+async function getbal() {
+  const response = await fetch('https://backend-omz4.onrender.com/trans/');
+  const data = await response.json();
+
+  console.log(data.length); 
+  
+  
+}
+getbal();
+
+
+
+// 0x4804239D472EAea79D55C3EfCc0846B183747148
+// 0x1fce67e857351456ba64486fa59FE047c541FAEb
+
+
+
+
+
+/**
+[
+  {
+    id: 14,
+    idt: 'bbb',
+    dates: '2026-4-9',
+    amount: '0.001',
+    status: 'Completed'
+  },
+  {
+    id: 13,
+    idt: 'bbb',
+    dates: '2026-4-9',
+    amount: '0.001',
+    status: 'Completed'
+  },
+  {
+    id: 12,
+    idt: 'bbb',
+    dates: '2026-4-9',
+    amount: '0.01',
+    status: 'Completed'
+  },
+  {
+    id: 11,
+    idt: 'bbb',
+    dates: '2026-4-9',
+    amount: '0.01',
+    status: 'Completed'
+  }
+]**/
+</script>
+</body>
+
+</html>

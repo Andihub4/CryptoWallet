@@ -1,0 +1,54 @@
+/* SIGNUP FORM */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.signup-form label {
+  font-size: 14px;
+  color: #a5a6af;
+}
+
+.signup-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+  background: #0c0f14;
+  color: white;
+  font-size: 14px;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #00c896;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  font-size: 13px;
+  color: #d1d1d1;
+}
+
+.btn.full {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.grid {
+  width: 96%;
+  max-width: 100%;
+  margin-left: 2%;
+}
+
+.animage {
+  width: 100%;
+  max-width: 100%;
+}

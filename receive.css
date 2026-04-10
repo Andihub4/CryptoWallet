@@ -1,0 +1,39 @@
+/* RECEIVE PAGE */
+.receive-card {
+  text-align: center;
+}
+
+.address-box {
+  background: #0c0f14;
+  border: 1px solid #2a2f3a;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.address-text {
+  word-break: break-all;
+  margin-bottom: 10px;
+  color: #00ff9f;
+  font-weight: bold;
+}
+
+.qr-container {
+  margin: 20px 0;
+}
+
+.qr-caption {
+  margin-top: 10px;
+  color: #a5a6af;
+  font-size: 14px;
+}
+
+.network-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 10px;
+  background: #1e222d;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+}
