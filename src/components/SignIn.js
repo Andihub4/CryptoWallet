@@ -6,7 +6,7 @@ export default function Login({ navigate }) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    alert(`Login submitted for: ${email}`);
+  
     
     
     async function creatac() {

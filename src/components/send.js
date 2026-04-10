@@ -18,7 +18,7 @@ export default function Send({navigate}) {
 
   function handleSend(e) {
     e.preventDefault();
-  alert(`from: me, to: ${address} , amount: ${amount}`);
+  
   
   
   async function creatTransaction() {
